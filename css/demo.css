@@ -39,10 +39,13 @@
 	height: 35px;
 	border-radius: 15px 0 0 15px;
 	border: 1px solid coral;
-	font-size: 20px;
+	font-size: 16px;
 	color: coral;
 	float: left;
-	
+	background:url(../images/search-logo.jpg) no-repeat left center;
+	background-color: #ffffff;
+	text-indent: 35px;
+	outline: none;
 }
 .search_button
 {
@@ -57,7 +60,7 @@
 	border: 1px solid coral;
 	margin-left: -4px;
 }
-.top_mid a:link
+.top_mid a:link,.top_mid a:visited
 {
 	color: white;
 	text-decoration: none;
@@ -68,13 +71,14 @@
 }
 .top_right
 {
-	width: 200px;
+	width: 220px;
 	height: 80px;
 	line-height: 80px;
 	float: left;
 	padding-left: 30px;
+	position: relative;
 }
-.top_right a:link
+.top_right a:link,a:visited
 {
 	color: black;
 	text-decoration: none;
@@ -87,3 +91,48 @@
 {
 	margin-left: 10px;
 }
+.box1 ,.box2 {
+	width: 300px;
+	height: 150px;
+	color:rgba(144,144,144,1.00);
+	background-color: white;
+	border: 1px solid rgba(203,199,199,1.00);
+	text-align: center;
+	line-height: 150px;
+	border-top: 2px solid coral;
+	position: absolute;
+	display: none;
+}
+.box1
+{
+	left: -100px;
+	top: 60px;
+}
+.box2
+{
+	left: -20px;
+	top: 60px;
+}
+.box1::after  ,.box2::after
+{
+	border-top: 2px solid coral;
+	border-left: 2px solid coral;
+	content: " ";
+	display: block;
+	height: 10px;
+	position: absolute;
+	transform: rotate(45deg);
+	width: 10px;
+	background-color: white;
+}
+.box1::after
+{
+	top:-7px;
+	left: 165px;
+}
+.box2::after
+{
+	top:-7px;
+	left: 147px;
+}
+
